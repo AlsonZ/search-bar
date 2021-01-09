@@ -42,6 +42,8 @@ body {
   padding: 0.2rem;
   margin: 0.3rem;
   border-radius: 5rem;
+  border: 1px solid var(--highlight);
+  transition: background 0.5s ease-in-out;
 }
 .search-bar .search-bar-button input[type="submit"] {
   display: none;
@@ -49,6 +51,13 @@ body {
 .search-bar .search-bar-button .svg-icon {
   width: 27px;
   fill: var(--highlight);
+  transition: fill 0.5s ease-in-out;
+}
+.search-bar .search-bar-button:hover {
+  background: var(--highlight);
+}
+.search-bar .search-bar-button:hover .svg-icon {
+  fill: var(--text);
 }
 
 input:-webkit-autofill,
